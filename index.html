@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Mekelle City Guide</title>
   <link rel="stylesheet" href="index.css">
   <script src="script.js" defer></script>
   <script src="spp.js" defer></script>
 </head>
 <body>
+  <!-- Navigation Menu -->
   <nav class="menu">
-    <button id="menuButton">☰ Menu</button>
+    <button id="menuButton" aria-controls="menuList" aria-expanded="false">☰ Menu</button>
     <ul id="menuList" class="hidden">
       <li><a href="#home">Home</a></li>
       <li><a href="#activities">Activities</a></li>
@@ -18,36 +19,41 @@
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
-  <div class="activities-section" id="activities">
+
+  <!-- Activities Section -->
+  <section class="activities-section" id="activities">
     <div class="cover-container">
-      <img class="cover-img" src="images/mkmk.jpg" alt="mekelle city view from endayesus">
+      <img class="cover-img" src="images/mkmk.jpg" alt="A panoramic view of Mekelle City from Endayesus">
     </div>
-    <h2>Top three things to do at Mekelle city</h2>
-    <ul id="list"></ul>
-      <button id="button">Add a Destination</button>
+    <h2>Top Three Things to Do at Mekelle City</h2>
+    <ul id="list">
+      <!-- Dynamic list items will be added here -->
+    </ul>
+    <button id="button">Add a Destination</button>
     <div class="dpy">
       <div>
         <img id="img1" src="images/hawelti.jpg" alt="Martyrs' memorial and museum">
         <p>Martyrs Obelisk.</p>
       </div>
       <div>
-        <img id="img2" src="images/yohannes.jpeg" alt="Palace complex of Yohannes IV (Atse Yohannes Museum) in Mekele, Ethiopia">
+        <img id="img2" src="images/yohannes.jpeg" alt="Palace complex of Yohannes IV (Atse Yohannes Museum) in Mekelle, Ethiopia">
         <p>Emperor Yohannes IV's Palace.</p>
       </div>
       <div>
-        <img id="img3" src="images/endayesus.jpg" alt="A holy cross for celebration of the Meskel holiday is located on the mountains in the east of the city.">
+        <img id="img3" src="images/endayesus.jpg" alt="A holy cross for the Meskel holiday celebration in the mountains east of the city.">
         <p>Enda Yesus.</p>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="fanu" id="guide">
-    <img class="img-1" src="images/per.jpg" alt="relaxing in one of the cafes in mekelle after a tour">
+  <!-- Guide Section -->
+  <section class="fanu" id="guide">
+    <img class="img-1" src="images/per.jpg" alt="Relaxing in one of Mekelle's cafes after a tour">
     <div>
       <h3>Your Guide</h3>
       <p>I have lived in Mekelle for over 30 years, so I can show you all its best parts and hidden secrets.</p>
       <h4>Fanuel Teklegiorgis</h4>
     </div>
-  </div>
+  </section>
 </body>
 </html>
