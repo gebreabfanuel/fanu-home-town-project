@@ -57,3 +57,95 @@ h2{
 .img-1{
     width: 150px;
 }
+/* New Menu Styles */
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    z-index: 1000;
+}
+
+#menuButton {
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menuList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    display: none; 
+    border: 1px solid #333;
+    border-radius: 4px;
+}
+
+#menuList li {
+    margin: 0;
+    padding: 10px;
+}
+
+#menuList li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: block;
+}
+
+#menuList li:hover {
+    background-color: #555;
+}
+
+#menuList.show {
+    display: block;
+}
+
+#list {
+    padding: 0;
+    margin: 20px auto;
+    max-width: 300px;
+    list-style-type: none;
+}
+
+#list li {
+    padding: 8px;
+    background-color: #f0f0f0;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+#list li:hover {
+    background-color: #ddd;
+}
+
+#button {
+    padding: 10px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto;
+}
+
+#button:hover {
+    background-color: #45a049;
+}
+
